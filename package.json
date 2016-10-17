@@ -1,0 +1,37 @@
+{
+  "name": "atomicorders",
+  "version": "0.0.1",
+  "description": "modulo para pedidos",
+  "main": "app.js",
+  "scripts": {
+    "test": "webschool node mean hc3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hc3/AtomicModule-Orders.git"
+  },
+  "keywords": [
+    "webschool",
+    "node",
+    "mean",
+    "hc3"
+  ],
+  "author": "hc3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hc3/AtomicModule-Orders/issues"
+  },
+  "homepage": "https://github.com/hc3/AtomicModule-Orders#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.3",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.0"
+  }
+}
