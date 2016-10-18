@@ -37,7 +37,7 @@ module.exports = function(app) {
 
     var addPedido = function(req, res) {
         console.log('addPedido');
-        var element = new Pedido(req.body);
+        var element = new Pedidos(req.body);
         element.save(function(err,produto) {
             return callback.callbackSave(err,res);
         });

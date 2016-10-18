@@ -4,7 +4,8 @@
   "description": "modulo para pedidos",
   "main": "app.js",
   "scripts": {
-    "test": "webschool node mean hc3"
+    "test": "webschool node mean hc3",
+    "test-integration":"mocha --opts test/integration/mocha.opts test/integration/pedido.test.js"
   },
   "repository": {
     "type": "git",

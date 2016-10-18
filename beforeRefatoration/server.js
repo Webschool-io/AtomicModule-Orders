@@ -33,7 +33,7 @@ mongoose.connect('mongodb://localhost/dbOrders', function(err, res) {
 });
 
 
-
+module.exports = app;
 // listen (start app with node server.js) ===================================================================
-app.listen(port);
-console.log('Listenning on port ' + port);
+//app.listen(port);
+//console.log('Listenning on port ' + port);

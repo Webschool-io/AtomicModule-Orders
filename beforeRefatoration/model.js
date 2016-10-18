@@ -37,5 +37,4 @@ var pedido = {
 }
 
 const pedidoSchema = new Schema(pedido);
-console.log('o Schema é :', pedidoSchema);
 module.exports = mongoose.model('Pedido',pedidoSchema);
