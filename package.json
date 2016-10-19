@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "webschool node mean hc3",
-    "test-integration":"mocha --opts test/integration/mocha.opts test/integration/pedido.test.js"
+    "test-integration": "mocha --opts test/integration/mocha.opts test/integration/pedido.atomic.test.js"
   },
   "repository": {
     "type": "git",
@@ -25,10 +25,13 @@
   "homepage": "https://github.com/hc3/AtomicModule-Orders#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "jade": "^1.11.0",
     "method-override": "^2.3.6",
     "mongoose": "^4.6.3",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "static-favicon": "^2.0.0-alpha"
   },
   "devDependencies": {
     "chai": "^3.5.0",
