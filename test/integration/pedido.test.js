@@ -35,14 +35,8 @@ describe('TEST integration para pedidos', function () {
     }
 
     beforeEach(function (done) {
-        Pedidos.
-        remove({}, function (err) {
-            console.log(err);
-        });
-        Pedidos.create(defaultPedido, function (err, dado) {
-            console.log('dado', dado);
-            console.log('Error>', err);
-        })
+        Pedidos.remove({}, function (err) {});
+        Pedidos.create(defaultPedido, function (err, dado) { });
         done();
     });
 
@@ -54,7 +48,6 @@ describe('TEST integration para pedidos', function () {
                 .end(function (err, res) {
                     expect(res.body).to.be.instanceof(Array);
                     expect(res.statusCode).to.be.eql(200);
-                    console.log('resposta do GET:', res.body);
                     done(err);
                 })
         })
